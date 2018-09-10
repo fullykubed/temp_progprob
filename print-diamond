@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+from diamond import printDiamond
+import argparse
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Print out a diamond of alpha characters')
+    parser.add_argument("end_character", help="Character to be printed at the largest width of the diamond.")
+    args = parser.parse_args()
+    printDiamond(args.end_character)
